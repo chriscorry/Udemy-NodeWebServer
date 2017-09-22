@@ -62,6 +62,13 @@ app.get('/about', (request, response) => {
   });
 });
 
+// RESP: /projects
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+    pageTitle: 'Portfolio'
+  });
+});
+
 // RESP: /bad
 app.get('/bad', (request, response) => {
   response.send({
